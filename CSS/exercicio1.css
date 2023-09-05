@@ -1,0 +1,18 @@
+h1{
+    font-family: Verdana;
+    text-align: center;
+    color: blue;
+}
+
+h2{
+    font-family: Georgia;
+    text-align: center;
+    color: #008000;
+}
+
+p{
+    font-family: Arial;
+    font-size: large;
+    text-align: center;
+    color: red;
+}
