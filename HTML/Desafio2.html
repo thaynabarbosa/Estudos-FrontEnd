@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Desafio Interativo 2 Formularios</title>
+    </head>
+    <body>
+        <h1>Informe seu endereço</h1>
+        <form action="paginaderecebimento">
+            <label>Rua: </label>
+            <input type="text" name="rua">
+            <label>Número: </label>
+            <input type="text" name="numero"><br/><br/>
+            <label>Cidade: </label>
+            <input type="text" name="Cidade">
+            <label>Estado: </label>
+            <select name="Estado">
+                <option value="RS">RS</option>
+                <option value="SC">SC</option>
+                <option value="PR">PR</option>
+            </select><br/><br/>
+            <label>Tipo: </label>
+            <input type="radio" id="res" name="tipo-estabelecimento" value="residência">
+            <label for="res">Residência</label>
+
+            <input type="radio" id="com" name="tipo-estabelecimento" value="comercial">
+            <label for="com">Comercial</label><br><br>
+            <input type="submit" value="Cadastrar">
+        </form>
+    </body>
+</html>

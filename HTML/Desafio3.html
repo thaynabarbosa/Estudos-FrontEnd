@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Desafio 3 Vaga emprego</title>
+    </head>
+    <body>
+        <form action="recebimentodedados" method="post">
+            <div>
+                <label for="nome">Nome completo: </label>
+                <input type="text" id="nome"><br/><br/>
+            </div>
+            <div>
+                <label for="telefone">Telefone: </label>
+                <input type="text" id="telefone"><br><br>
+            </div>
+            <div>
+                <label>Vaga Desejada</label>
+                <select name="Vagadesejada">
+                    <option value="Atendente">Atendente</option>
+                    <option value="Pedreiro">Pedreiro</option>
+                    <option value="Programador">Programador</option>
+                    <option value="Professor">Professor</option>
+                </select><br><br>
+            </div>
+            <div>
+                <input type="checkbox" id="especial" name="especial" value="Sim">
+                <label for="especial">Necessidade especial ou não?</label>
+            </div>
+        </form>
+    </body>
+</html>
