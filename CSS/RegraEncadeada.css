@@ -1,0 +1,9 @@
+div{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div p{
+    font-weight: bold;
+    color: darkblue;
+    font-family: 'Courier New', Courier, monospace;
+}
