@@ -1,0 +1,12 @@
+.conteudo{
+    font-family: Lucida Console;
+    text-align: center;
+    display: inline;
+    background-color: aquamarine;
+}
+
+.interno{
+    margin-top: 5px;
+    padding-top: 5px;
+    background-color: yellow;
+}
