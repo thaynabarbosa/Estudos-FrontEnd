@@ -1,0 +1,15 @@
+div{
+    border: 2px solid black;
+    width: 50%;
+    overflow: auto;
+}
+
+.img-esquerda{
+    float: left;
+    width: 220px 
+}
+
+.img-direita{
+    float: right;
+    width: 220px;
+}
