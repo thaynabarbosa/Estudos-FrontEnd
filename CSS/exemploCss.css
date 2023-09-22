@@ -1,0 +1,68 @@
+.buttons {
+    text-align: center;
+    margin-top: 3em;
+  }
+
+  .effect{
+    border:none;
+    color:#0f0a02;
+    padding: 20px;
+    margin: 10px;
+    font-size: 24px;
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 400ms ease;
+  }                              
+
+  .effect-1::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 64px;
+    background: rgba(47, 8, 218, 0.3);
+    border-radius: 10px;
+    transition: all 2s ease;
+  }
+
+  .effect-1:hover::before{
+    width: 100%;
+  }
+
+  .effect-2::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: 0px;
+    background: rgba(145, 6, 201, 0.3);
+    border-radius: 10px;
+    transition: all 2s ease;
+  }
+
+  .effect-2:hover::before{
+    height: 100%;
+  }
+
+  .buttons .effect-3{
+    text-align: center;
+    background-color: red;
+    color: white;
+    margin-top: 3em;
+  }
+
+ 
+
+  .effect-3:hover{
+    content: '';
+    
+    background-color: white;
+    border: 2px solid red;
+    color: red;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+  }
