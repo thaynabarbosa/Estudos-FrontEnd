@@ -25,3 +25,9 @@ nav a:link{
 nav a:hover{
     background: #e5f0ff;
 }
+
+body{
+    width: 70%;
+    float: right;
+    text-align: justify;
+}
