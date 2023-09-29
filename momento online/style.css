@@ -51,3 +51,7 @@ p{
     width: 30%;
     background-color: yellowgreen;
 }
+
+#aluno{
+    display: none;
+}
