@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Condicionais em javascript</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        //se o resultado for verdadeiro (true), executa um bloco de código que é delimitado por chaves.
+
+       if( 1 < 2){
+        alert("A condição é verdadeira");
+       }
+
+       //A instrução pode conter um bloco else opcionalmente. Este é executado quando a condição é falsa (false)
+
+       if( 1> 2){
+        alert("A condição é verdadeira!");
+       } else {
+        alert("A condição é falsa!");
+       }
+
+       //se quiser testar várias variantes de uma condição, também é possível.
+       //Neste caso usa-se o else if após a instrução if
+
+       let nota = 5;
+
+       if(nota > 6){
+        alert("Nota média.");
+       } else if( nota == 10){
+        alert("Nota máxima!");
+       } else{
+        alert("Nota baixa");
+       }
+
+       //você só irá para próxima condição se a atual for falsa.
+       //Isso significa que, se caso o valor da nota for 10,não haverá o alerta "Nota máxima!" sendo apresentado
+       //pois primeira condição será verdadeira.
+
+    </script>
+</body>
+
+</html>
