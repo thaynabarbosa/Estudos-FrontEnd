@@ -47,12 +47,12 @@
     /* Conclusão: a variável x que declaramos no if irá subscrever a variável x que declaramos no começo
     pois VAR atua em contexto de função.*/
 
-    let x = 1; //declaramos uma let x
+    let x1 = 1; //declaramos uma let x
     if(true){
-        let x = 2; //redeclaramos uma let x
-        alert(x); //vai exibir 2
+        let x1 = 2; //redeclaramos uma let x
+        alert(x1); //vai exibir 2
     }
-    alert(x); // vai exibir 1
+    alert(x1); // vai exibir 1
 
     /*Conclusão: como as variáveis let atuam em contexto de bloco, a variável do bloco
     IF não subscreveu a variável declada no início*/
