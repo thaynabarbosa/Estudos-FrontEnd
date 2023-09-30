@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Função</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        //as funções são os principais blocos de contrução do programa.
+        //Eles permitem que o código seja chamado várias vezes sem repetição, o que é muito útil
+        // quando é preciso executar uma mesma ação em contextos diferentes de um software.
+
+        //Declaração de função
+
+        function nome(parameto1, parametro2){
+            // corpo
+        }
+
+        /* A palavra-chave function vai primeiro, depois o nome da função e, por fim, 
+        os parâmetros entre parênteses (separdos por vírgula) 
+        Caso a função não tenha nenhum parâmetro, basta deixá-los em branco*/
+
+        /*
+        Funções são ações, portanto seu nome geralmente é um verbo.
+        Procure sempre definir nomes de forma breve, sendo o mais preciso possível
+        e descrevendo o que a função faz, 
+        para que alguém que leia o código tenha uma indicação do que a função realmente faz.
+
+        Em JavaScrip não é preciso se preocupar em informar o tipo de retorno da função, diferente do Java.
+
+        */
+        
+
+        function mostrarMensagem(){
+            alert("Olá, mundo!");
+        }
+
+        mostrarMensagem();
+        mostrarMensagem();
+
+        //Variáveis locais 
+        
+        //Uma variável local é uma variável declarada dentro de uma função.
+        //E está só é visível dentro dessa função.
+
+
+        function mostrarMensagem2(){
+            let mensagem = "Olá, mundo! Eu sou JavaScript!"; //variável local
+            alert(mensagem);
+        }
+
+        mostrarMensagem2(); //Olá, mundo! Eu sou JavaScript!
+
+        //alert(mensagem); // <-- Erro! "Mensagem is not defined"
+
+
+        //Variáveis Externas
+
+        //Variáveis externas qualquer variável que esteja declarada fora do contexto de uma função.
+        //Além das variáveis locais uma função também pode acessar uma variável externa.
+
+        let linguagem = "JavaScript";
+
+        function mostrarMensagem3(){
+            let mensagem = "Olá, mundo! Eu sou " + linguagem;
+            alert(mensagem);
+        }
+
+        mostrarMensagem3();
+        //alert(mensagem); // <-- Erro! "Mensagem is not defined"
+
+        //Função tem acesso total à variável externa e também pode modificá-la
+
+        let linguagem2 = "JavaScript!!"
+
+        function mostrarMensagem4(){
+            linguagem2 = "JS. " ; //mudamos o nome da linguagem
+            let mensagem = "olá, mundo! Eu sou " + linguagem2;
+            alert(mensagem);
+        }
+
+        alert(linguagem2); //Exibimos o nome JavaScript
+        mostrarMensagem4(); //chamamos o método que irá alterar o nome;
+        alert(linguagem2); // Exibimos o novo nome
+
+        /*
+        a variável externa só é usada se não houver uma local
+        Se uma variavel com o mesmo nome for declarada dentro da função, ela ignorará a externa.
+        */
+
+        let linguagem3 = "JavaScript '3'";
+        function mostrarMensagem5(){
+            let linguagem3 = "JS."; //declaramos uma variável interna com o mesmo nome de uma variável externa.
+            let mensagem = "Olá, mundo! Eu sou " + linguagem3;
+            alert(mensagem);
+        }
+
+        alert(linguagem3); //JavaScript '3'
+        mostrarMensagem5(); // Olá, mundo! Eu sou JS.
+        alert(linguagem3); //JavaScript '3'
+
+        // as variáveis declaradas fora de qualquer função, como a variável externa linguagem3 no código acima.
+        //São chamadas de variáveis globais.
+        //Essas variáveis são visiveis para qualquer função a menos que sejam sombreadas por outra variável local.
+
+    </script>
+</body>
+
+</html>
