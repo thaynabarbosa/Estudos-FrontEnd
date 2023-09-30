@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Conversão de tipos</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <script type="text/javascript">
+        
+        //identificando o tipo de dado
+        //Para descobrir o tipo de dado que o JavaScript está lidando, usa-se a palavra-chave typeof seguindo o valor
+
+        let string = "123";
+        alert(typeof string); //string
+
+        let numero = 123;
+        alert(typeof numero); // number
+
+        let booleano = true;
+        alert(typeof booleano); // boolean
+
+    /* dessa forma é possivel identificar como o JavaScript está tratando determinado dado 
+    e aplicar a conversão certa para o tipo que se quer */
+       
+    //Converão de String
+
+    let booleano1 = true;
+    alert(typeof booleano1); // boolean
+
+    let string1 = String(booleano1); // conversão para String
+    alert(typeof string1);
+
+    //Conversão Numérica
+
+    alert( "6" / " 2 "); // 3, textos são convertidos para números
+
+    // para realizar uma conversão explícita para números, usa-se a função Number();
+
+    let string2 = "123";
+    alert(typeof string2); // String
+
+    let numero1 = Number(string);
+    alert(typeof numero1); //number
+
+    /*Além do método Number(), existem outros métodos JavaScript disponíveis para realizar conversões 
+    específicas para outros tipos númericos - como float e int 
+    */
+
+    //Para converter para int,usa-se parseInt()
+    //Para converter para float, usa-se parseFloat()
+
+    let string3 = "1.23";
+    alert(typeof string3); //String
+
+    let numeroInt = parseInt(string3);
+    alert("valor: " + numeroInt + " - Tipo: " + typeof numeroInt);
+
+    let numeroFloat = parseFloat(string3);
+    alert("valor: " + numeroFloat + " - Tipo: " + typeof numeroFloat);
+
+    //caso deseje limitar o número de casa decimais, use também a função toFixed() com a quantidade que vcê quer.
+
+    let string4 = "1.233333333";
+    alert(typeof string4);
+
+    let numero2 = parseFloat(string4); // valor completo
+    alert("valor: " + numero2 + " - Tipo: " + typeof numero2); //valor completo
+
+    alert("valor: " + numero2.toFixed(2) + " - Tipo: " + typeof numero2); // valor limitado a 2 csas decimais
+
+
+    /*
+    Em JavaScript há apenas um tipo de número, number, ao contrário do Java, que tem tipos double, int e float.
+    Por isso, não é possível lidar nativamente com um número decimal de 21 digitos, e essa é a razão de não haver
+    parseDouble() em JavaScript.
+    */
+
+    </script>
+</body>
+
+</html>
