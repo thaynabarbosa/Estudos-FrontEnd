@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Linguagem de Scripts</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <script type="text/javascript">
+        //Concatenação de texto com +
+
+        let texto = "Olá," + "mundo";
+        alert(texto); //olá, mundo
+
+        //se algum dos operadores for uma string outro também será convertido em uma string.
+        //Não importa se o primeiro operando é uma string ou o segundo.
+        alert("1" + 2); // "12"
+        alert(2 + "1"); // "21"
+
+        //Aqui os operadores trabalham um após o outro, 
+        //primeiro soma os dois números e retorna 4 e depois adiciona a String 1
+        alert(2 + 2 + "1"); // "41" e não "221"
+
+        //Outro exemplo com os operadores inversos
+        //aqui o primeiro operando é uma String, então o compilador tratará os outros operandos como Strings também.
+        alert("1" + 2 + 2); // "122" e não "14"
+
+        //o operador + é o único de lida com Strings dessa forma.
+        //Outros operadores aritméticos trabalham apenas com número e sempre convertem seus operandos em números.
+
+        //Por exemplo
+
+        alert(6 - "2"); //a string "2" é convertida para 2 e o resultado da operação é 4
+
+        alert ("6" / "2"); // ambas strings são convertidas e o resultado da operação é 3
+
+    </script>
+</body>
+
+</html>
