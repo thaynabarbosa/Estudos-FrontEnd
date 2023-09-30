@@ -8,54 +8,18 @@
 
 <body>
     <script type="text/javascript">
-        //em JavaScript as variáveis não são tipadas
-        //Ou seja, não é preciso especificar um tipo
-        //para declarar uma variável usa-se a palavra chave let.
-     let mensagem;
-
-    mensagem = "olá, mundo!"; //atribuindo um valor em "mensagem"
-     alert(mensagem); //lendo um valor de "mensagem"
-
-     //também é possível atribuir várias variáveis em uma única linha
-     //mas não é o recomendado
-     let mensagem2 = "olá, mundo!", usuario = "admin", idade = 45;
-
-     //para facilitar a leitura, procure separar as variáveis por linhas
-    let mensagem3 = "Olá, mundo!";
-    let usuario2 = "admin";
-    let idade2 = 45;
-
-    //também é possivel declarar duas variáveis e copiar os dados de uma para outra
-    let ola = "olá, mundo!"
-    let mensagem4 = ola;
-    
-    //uma variável deve ser declada apenas uma vez, uma declaração repetida da mesma variável resultará em ERRO.
-
-    /* Em Scripts mais antigos pode ser encontrado a palavra-chave var para declarar uma variável em vez de let*/
-    //var faz algo parecido mas não igual, em comparação com a palavra let
-    // VAR declara um variavel em escopo de função
-    // Enquanto LET atua em escopo de bloco.
-
-    //EXEMPLOS
-
-    var x = 1; // declaramos uma var x
-    if(true){
-        var x = 2; //redeclaramos x
-        alert(x); //vai exibir 2
-    }
-    alert(x); //vai exibir 2
-    /* Conclusão: a variável x que declaramos no if irá subscrever a variável x que declaramos no começo
-    pois VAR atua em contexto de função.*/
-
-    let x1 = 1; //declaramos uma let x
-    if(true){
-        let x1 = 2; //redeclaramos uma let x
-        alert(x1); //vai exibir 2
-    }
-    alert(x1); // vai exibir 1
-
-    /*Conclusão: como as variáveis let atuam em contexto de bloco, a variável do bloco
-    IF não subscreveu a variável declada no início*/
+        //tipos de variaveis
+        let x; //não definida
+        x = 0; // number
+        alert(x);
+        x = true; // boolean
+        alert(x);
+        x = "texto"; //string
+        alert(x);
+        // Isso corre porque o JavaScrip define os tipos de dados dinamicamente
+        let z = 5;
+        z = "olá";
+        alert(z);
 
     </script>
 </body>
