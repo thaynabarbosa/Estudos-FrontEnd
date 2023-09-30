@@ -8,11 +8,21 @@
 
 <body>
     <script type="text/javascript">
-        // Esse é um exemplo de comentário em uma linha (dentro do JavaScript)
+        //o caracterre ponto e virgula pode ser omitido na maioria dos casos quando existe uma quebra de linha
+        //JavaScript interpreta a quebra de linha como ponto e vírgula "implícito"
+        //chamado de inserção automática de ponto e vírgula.
+        alert("olá")
+        alert("Mundo!")
 
-        /* Esse é o inicio do comentário.
-        Podemos extende-lo o quanto quisermos.
-        Aqui, finalizamos o nosso comentário. */
+        //Mas não são todos os casos
+
+        alert(3 +
+        1
+        + 2)
+
+        /*o código gerado será 6, porque é intuitivamente óbvio que,
+        se a linha terminar com um sinal de mais é uma "expressão incompleta"*/
+
     </script>
 </body>
 
