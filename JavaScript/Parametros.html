@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Operadores de Comparação</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        //Parâmetros são variáveis listadas como part da definição da função.
+        // exemplo parâmetros numero1 e numero2
+        function somar(numero1, numero2) {
+            alert(numero1 + numero2);
+        }
+
+        //argumentos são valores passados para a função quando ela é invocada.
+        somar(27, 30);
+
+        //Valores padrão
+
+        //se um dos argumentos da função não for fornecido, produziria o erro Undefined
+
+        function somar1(numero1, numero2) {
+            alert(numero1 + numero2);
+        }
+        somar(13);
+
+        //13 + undefined
+
+        //Dessa forma ambos os parâmetros numero1 e numero2 terão padrão 0
+        //caso algum dsses parâmetros não for passado.
+
+        function somar2(numero1 = 0, numero2 = 0) {
+            alert(numero1 + numero2);
+
+        }
+
+        //Retornando um valor
+
+        function somar3(numero1 = 0, numero2 = 0){
+            return numero1 + numero2;
+        }
+
+        let resultado = somar(30,103);
+        alert(resultado);
+
+
+
+
+    </script>
+</body>
+
+</html>
