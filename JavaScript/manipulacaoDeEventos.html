@@ -17,8 +17,14 @@
             <label>senha:</label>
             <input type="password" id="senha">
         </p>
-        <input type="submit" value="acessar" onclick="alert('Login Efetuado!')">
+       <input type="submit" value="acessar" onclick="fazerLogin()">
     </form>
+    <script type="text/javascript">
+        function fazerLogin(){
+            alert("Login Efetuado!");
+        }
+    </script>
 </body>
 <!--Observe que dentro de onclick, usam-se aspas simples, pois o próprio atributo está em aspas duplas.--->
+<!--Além disso um atributo HTML não é um lugar conveniente para escrever muito código. Então, é melhor criar uma função JavaScript e chamá-la-->
 </html>
