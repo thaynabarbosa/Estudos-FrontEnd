@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pesquisar elemento pelo nome</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <table id="tabela">
+            <tr>
+                <td>o que você está aprendendo?:</td>
+                <td>
+                    <label>
+                        <input type="radio" name="tecnologia" value="HTML"> HTMl
+                    </label>
+                    <label>
+                        <input type="radio" name="tecnologia" value="CSS"> CSS
+                    </label>
+                    <label>
+                        <input type="radio" name="tecnologia" value="JavaScript" checked> JS
+                    </label>
+                </td>
+            </tr>
+        </table>
+        <script type="text/javascript">
+            //buscamos todos os elementos com a tag input
+            let inputs = document.getElementsByName('input');
+            //percorremos item a item dessa lisa e o tratamos individualmente como objeto input
+            for(let input of inputs){
+                //exibimos o valor da input e verificamos se ela está marcada (true/false)
+                alert(input.value + ': ' + input.checked);
+            }
+        </script>
+    </body>
+</html>
