@@ -13,13 +13,15 @@
             </p>
             <p>
                 <label>Senha:</label>
-                <input type="password" id="senha">
+                <input type="password" id="senha" value="123">
             </p>
             <input type="submit" value="Acessar">
         </form>
         <script type="text/javascript">
-            let elemento = document.getElementById('titulo');
-            alert(elemento);
+            let elemento = document.getElementById('senha');
+            alert(elemento.value);
+            //se você estiver lidando com um campo de entrada de dados (input)
+            //é possivel acessar a propriedade value e descobrir qual informação consta nesse formulário.
         </script>
     </body>
 </html>
