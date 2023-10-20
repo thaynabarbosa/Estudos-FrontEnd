@@ -26,13 +26,26 @@
             listaDeItens.push(novoItem); //Adicionar o novo item ao vetor
             document.getElementById("item").value = ""; // Limpar o campo de entrada de texto
 
-            // Exibir os itens armazenados no vetor na página
+            // Exibir os itens armazenados no vetor na página (opcional)
             let conteudoLista = "";
             for (let i = 0; i < listaDeItens.length; i++){
-                conteudoLista += "<p>" + listaDeItens[i] + "</p>";
+                // adicionamos o item da lista com o evento onclick preparado para acionar a função riscar
+                // aqui, usaremos a posição do vetor para difenciar um elemento do outro
+                conteudoLista += "<p id='" + i + "' onclick='riscar("+i+")'>" + listaDeItens[i] + "</p>";
             }
 
             document.getElementById("listaDeCompras").innerHTML = conteudoLista;
+        }
+
+        function riscar(){
+            //verificamos se o elemento não possui estilização
+            if(document.getElementById(id).style.cssText == ""){
+                //se não tiver, aplicamos o seguinte estilo
+                document.getElementById(id).style.cssText="text-decoration: line-through;"
+            } else{
+                //se tiver, removemos o estilo
+                document.getElementById(id).style.cssText= "";
+            }
         }
     </script>
 
