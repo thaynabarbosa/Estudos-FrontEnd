@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Modificando Elementos com Style</title>
+</head>
+<body>
+    <div id="meuElemento" style="color: blue">
+        <p>Conteúdo original</p>
+    </div>
+    <button onclick="atualizarConteudo()">Atualizar</button>
+
+    <script type="text/javascript">
+        function atualizarConteudo(){
+            document.getElementById("meuElemento").style.color = "red";
+            document.getElementById("meuElemento").style.fontSize = "20px";
+        }
+    </script>
+</body>
+</html>
