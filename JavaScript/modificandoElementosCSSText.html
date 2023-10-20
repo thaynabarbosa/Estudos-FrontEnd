@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Modificando multiplas propriedades CSS </title>
+</head>
+<body>
+    <div id="meuElemento" style="color: blue">
+        <p>Conteúdo original</p>
+    </div>
+    <button onclick="atualizarConteudo()">Atualizar</button>
+
+    <script type="text/javascript">
+        function atualizarConteudo(){
+            document.getElementById("meuElemento").style.cssText = "color: red; font-size: 20px";
+        }
+    </script>
+</body>
+</html>
