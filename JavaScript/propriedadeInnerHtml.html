@@ -18,5 +18,22 @@
         //A propriedade innerHTML permite que você modifique o conteúdo HTML de um elemento
         //Isso substituirá o conteúdo anterior pelo novo conteúdo, alterando a exibição do elemento na página.
     </script>
+
+    <!--Caso deseje adicionar um novo conteúdo a um determinado elemento sem substituir o conteúdo anterior, concatene
+    o conteúdo antigo com o novo da seguinte maneira-->
+        <div id="meuElemento2">
+            <p> Conteúdo original novo exemplo</p>
+        </div>
+
+        <button onclick="concatenaConteudo()">Concatenar</button>
+
+        <script>
+            function concatenaConteudo(){
+                let conteudoAntigo = document.getElementById("meuElemento2").innerHTML;
+                let conteudoNovo = "<p>Novo Conteudo</p>";
+                document.getElementById("meuElemento2").innerHTML = conteudoAntigo + conteudoNovo;
+            }
+        </script>
+
 </body>
 </html>
