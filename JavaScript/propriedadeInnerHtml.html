@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Propriedade InnerHtml</title>
+</head>
+<body>
+    <div id="meuElemento">
+        <p>Conteúdo original</p>
+    </div>
+    <button onclick="atualizarConteudo()">Atualizar</button>
+    
+    <script type="text/javascript">
+        function atualizarConteudo(){
+            document.getElementById("meuElemento").innerHTML = "<p>Novo Conteúdo</p>";
+        }
+
+        //A propriedade innerHTML permite que você modifique o conteúdo HTML de um elemento
+        //Isso substituirá o conteúdo anterior pelo novo conteúdo, alterando a exibição do elemento na página.
+    </script>
+</body>
+</html>
