@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionamento do JQuery</title>
+</head>
+<body>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            alert('jQuery funcionando corretamente!')
+        })
+    </script>
+    <!--
+        A função ready() está recebendo uma função como parâmetro
+        O escopo desse função existe apenas dentro da chamada da função ready()
+        Essa função não tem nome ou identificador. Seu proposito é existir apenas quando a função ready() for chamada
+        Esse tipo de função é chamada de função anônima.
+        O uso de função anônima é bem comum no JQuery, mas não necessáriamente obrigatório.
+        O mesmo poderia ter sido escrito como:
+    -->
+
+    <script>
+        $(document).ready(teste)
+        function teste(){
+            alert('Está é uma função normal do JavaScript!')
+        }
+    </script>
+</body>
+</html>
