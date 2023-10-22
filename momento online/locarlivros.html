@@ -27,7 +27,7 @@
             <h3>Você está na area de Locação</h3>
             <form>
                 <label>Escolha um livro</label>
-                <select>
+                <select id="livro_select">
                     <option>O Iluminado</option>
                     <option>O Segredo</option>
                     <option>Java 2023</option>
@@ -45,7 +45,7 @@
                 <label>Não</label>
                 <input type="radio" name="verifica_aluno" value="Não"/>
                 <br>
-                <button type="submit" id="btn_concluir" onclick="enviar()">Concluir</button>
+                <button type="button" id="btn_concluir" onclick="enviar()">Concluir</button>
             </form>
         </div>
         <div id="identificador_locacao">
