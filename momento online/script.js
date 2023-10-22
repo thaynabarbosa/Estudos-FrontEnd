@@ -12,3 +12,12 @@ function atualizarConteudo(){
         document.getElementById('identificador').innerHTML = "";
     }
 }
+
+function enviar(){
+    let input = document.querySelector('input[name = "verifica_aluno"]:checked');
+    let texto = input.value;
+
+    if(texto == "Sim"){
+        
+    }
+}

@@ -45,13 +45,16 @@
                 <label>Não</label>
                 <input type="radio" name="verifica_aluno" value="Não"/>
                 <br>
-                <button type="submit" id="btn_concluir">Concluir</button>
+                <button type="submit" id="btn_concluir" onclick="enviar()">Concluir</button>
             </form>
         </div>
-        <div id="aluno">
-            <label>Prazo de devolução:</label>
+        <div id="identificador_locacao">
+            <h3>Locação realizada com sucesso</h3>
+            <label id="livro"></label>
             <br>
-            <label>inscrição</label>
+            <label id="prazo"></label>
+            <br>
+            <label id="num_inscricao"></label>
         </div>
 
     </main>
