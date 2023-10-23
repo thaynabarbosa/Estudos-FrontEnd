@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>Checkbox</title>
+</head>
+<body>
+    <!--
+        Inputs de checkbox também têm uma classe própria: form-check-input.
+        Para o <label> associado a esse elemento, usa-se a classe form-check-label. 
+        Ambos os elementos precisam estar em um container com classe form-check.
+    -->
+
+    <div class="container">
+        <form method="post" action="#">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Sim" id="chkEmail">
+                <label class="form-check-label" for="chkEmail">
+                    Deseja receber nossos emails?
+                </label>
+            </div>
+        </form>
+    </div>
+
+</body>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</html>

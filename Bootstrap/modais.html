@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>Modal</title>
+</head>
+<body>
+    <!--
+    Modal é um painel ou uma caixa de diálogo que surge à frente do conteúdo de uma página de modo que a interação aconteça apenas com esse painel. 
+    É bastante útil para mostrar mensagens ao usuário ou complementar uma ação. 
+    Com Bootstrap, para criar um modal, primeiro é preciso definir alguns dados no botão que o aciona:
+    -->
+
+<div class="container">
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#meuModal">
+        abrir modal
+    </button>
+   
+    <div class="modal" id="meuModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Cabeçcalho  -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Este é um modal</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Conteúdo -->
+                <div class="modal-body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit odio odit dignissimos esse explicabo quidem commodi cumque magni necessitatibus, </p>
+                       <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde doloribus quia eos molestiae consequatur nostrum nulla in, 
+                        repudiandae et molestias ad eligendi illum assumenda autem eius a deleniti voluptate recusandae!</p> 
+                        <p> quas nihil porro eos? Repellendus eum aspernatur necessitatibus inventore ducimus.</p>
+                </div>
+
+                <!-- Rodapé -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    const myModal = new bootstrap.Modal('#meuModal', { }); 
+          myModal.show(); 
+
+    //Dentre as chaves, podem ser informadas algumas opções, como possibilitar ou bloquear o fechamento do modal pela tecla Esc (keyboard: true ou keyboard: false).
+</script>
+
+<!--
+
+    A classe CSS modal define o painel modal como um todo.
+
+Dentro do elemento com essa classe, há um container com a classe modal-dialog e, dentro desse, outro container com modal-content que forma o conteúdo.
+No container com modal-content é possível incluir uma <div> com classe modal-header para uma barra de título. A classe modal-title pode ser usada para a estilização do título e btn-close para um botão de fechar em formato de X.
+Importante notar o atributo data-bs-dismiss com valor modal. Caso não tenha esse atributo, o botão não será capaz de fechar o painel.
+A classe modal-body define o conteúdo principal do painel. Aqui poderia ser incluída uma mensagem de erro, uma orientação ao usuário, imagens ou mesmo um formulário.
+A classe modal-footer define um rodapé para o painel, podendo trazer botões de interação. Note mais uma vez o atributo data-bs-dismiss com valor modal.
+-->
+
+
+    <!--
+        É necessário usar os atributos de dados data-bs-toggle com valor modal
+        e data-bs-target com valor correspondente ao id do container que será o painel modal 
+        – neste caso, haverá uma <div> com id = "meuModal".
+    -->
+
+</body>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</html>

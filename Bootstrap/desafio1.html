@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #vermelho{
+            background-color: red;
+            height: 150px;
+        }
+
+        #verde{
+            background-color: green;
+            height: 150px;
+        }
+
+        #amarelo{
+            background-color: yellow;
+            height: 150px;
+        }
+
+        #marrom{
+            background-color: lightsalmon;
+            height: 75px;
+        }
+
+        #aqua{
+            background-color: aqua;
+            height: 75px;
+        }
+
+        #cinza{
+            background-color: grey;
+            height: 150px;
+        }
+
+    </style>
+    <title>Desafio 1</title>
+
+</head>
+<body>
+    <div class="container">
+        <!-- Linha UM-->
+        <div class="row">
+            <div class="col-sm-8" id="vermelho" >
+                <p>height 150px</p>
+            </div>
+            <div class="col-sm-4" id="verde">
+                <p>height 150px</p>
+            </div>
+        </div>
+    <!-- Linha DOIS-->
+        <div class="row">
+            <div class="col-sm-4" id="amarelo">
+                <p>height 150px</p>
+            </div>
+        <!--Coluna-->
+            <div class="col-sm-4">
+                <!--container-->
+                <div class="container">
+                    <!--duas linhas-->
+                    <div class="row" id="marrom">
+                        <p>height 75px</p>
+                    </div>
+                     <!--duas linhas-->
+                    <div class="row" id="aqua">
+                        <p>height 75px</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4" id="cinza">
+                <p>height 150px</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</html>

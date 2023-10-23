@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+    <title>Formulários</title>
+</head>
+<body>
+    <!--Cada campo do formulário deve usar a classe form-control.-->
+    <!--Rótulos para os campos devem usar a classe form-label. -->
+
+    <div class="container">
+        <form method="post" action="#">
+            <div class="mb-3">
+                <label for="txtNome" class="form-label">Nome:</label>
+                <input id="txtNome" class="form-control" type="text">
+            </div>
+
+            <div class="mb-3">
+                <label for="txtSenha" class="form-label">Senha:</label>
+                <input id="txtSenha" class="form-control" type="password">
+            </div>
+
+            <div class="mb-3">
+                <input type="submit" class="btn btn-primary" value="Acessar">
+            </div>
+        </form>
+    </div>
+
+
+</body>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</html>
