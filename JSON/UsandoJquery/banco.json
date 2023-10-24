@@ -1,0 +1,24 @@
+{
+  "noticias": [
+    {
+      "titulo": "Java",
+      "conteudo": "Linguagem Java",
+      "id": 1
+    },
+    {
+      "titulo": "JSON SERVER",
+      "conteudo": "Utilizado para API ficticia",
+      "id": 2
+    },
+    {
+      "titulo": "API Fetch",
+      "conteudo": "Conhecendo a API Fetch",
+      "id": 3
+    },
+    {
+      "titulo": "API Fetch",
+      "conteudo": "Conhecendo a API Fetch",
+      "id": 4
+    }
+  ]
+}
